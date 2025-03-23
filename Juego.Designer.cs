@@ -44,7 +44,7 @@
             // lblPalabra
             // 
             this.lblPalabra.AutoSize = true;
-            this.lblPalabra.Location = new System.Drawing.Point(96, 485);
+            this.lblPalabra.Location = new System.Drawing.Point(114, 426);
             this.lblPalabra.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPalabra.Name = "lblPalabra";
             this.lblPalabra.Size = new System.Drawing.Size(79, 22);
@@ -54,7 +54,7 @@
             // lblIncorrectas
             // 
             this.lblIncorrectas.AutoSize = true;
-            this.lblIncorrectas.Location = new System.Drawing.Point(562, 205);
+            this.lblIncorrectas.Location = new System.Drawing.Point(426, 267);
             this.lblIncorrectas.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblIncorrectas.Name = "lblIncorrectas";
             this.lblIncorrectas.Size = new System.Drawing.Size(76, 22);
@@ -63,7 +63,7 @@
             // 
             // txtLetra
             // 
-            this.txtLetra.Location = new System.Drawing.Point(100, 524);
+            this.txtLetra.Location = new System.Drawing.Point(118, 452);
             this.txtLetra.Margin = new System.Windows.Forms.Padding(4);
             this.txtLetra.Name = "txtLetra";
             this.txtLetra.Size = new System.Drawing.Size(49, 29);
@@ -72,7 +72,7 @@
             // btnEnviar
             // 
             this.btnEnviar.BackColor = System.Drawing.Color.White;
-            this.btnEnviar.Location = new System.Drawing.Point(88, 566);
+            this.btnEnviar.Location = new System.Drawing.Point(118, 495);
             this.btnEnviar.Margin = new System.Windows.Forms.Padding(4);
             this.btnEnviar.Name = "btnEnviar";
             this.btnEnviar.Size = new System.Drawing.Size(135, 55);
@@ -83,7 +83,7 @@
             // 
             // btnSalir
             // 
-            this.btnSalir.Location = new System.Drawing.Point(244, 566);
+            this.btnSalir.Location = new System.Drawing.Point(274, 495);
             this.btnSalir.Margin = new System.Windows.Forms.Padding(4);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(134, 55);
@@ -95,7 +95,7 @@
             // lblPista
             // 
             this.lblPista.AutoSize = true;
-            this.lblPista.Location = new System.Drawing.Point(562, 244);
+            this.lblPista.Location = new System.Drawing.Point(426, 306);
             this.lblPista.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPista.Name = "lblPista";
             this.lblPista.Size = new System.Drawing.Size(54, 22);
@@ -105,7 +105,7 @@
             // lblVictorias
             // 
             this.lblVictorias.AutoSize = true;
-            this.lblVictorias.Location = new System.Drawing.Point(562, 119);
+            this.lblVictorias.Location = new System.Drawing.Point(426, 181);
             this.lblVictorias.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblVictorias.Name = "lblVictorias";
             this.lblVictorias.Size = new System.Drawing.Size(88, 22);
@@ -115,7 +115,7 @@
             // lblDerrotas
             // 
             this.lblDerrotas.AutoSize = true;
-            this.lblDerrotas.Location = new System.Drawing.Point(561, 161);
+            this.lblDerrotas.Location = new System.Drawing.Point(425, 223);
             this.lblDerrotas.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDerrotas.Name = "lblDerrotas";
             this.lblDerrotas.Size = new System.Drawing.Size(89, 22);
@@ -124,9 +124,9 @@
             // 
             // picAhorcado
             // 
-            this.picAhorcado.Location = new System.Drawing.Point(88, 119);
+            this.picAhorcado.Location = new System.Drawing.Point(118, 110);
             this.picAhorcado.Name = "picAhorcado";
-            this.picAhorcado.Size = new System.Drawing.Size(453, 332);
+            this.picAhorcado.Size = new System.Drawing.Size(301, 313);
             this.picAhorcado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picAhorcado.TabIndex = 9;
             this.picAhorcado.TabStop = false;
@@ -137,7 +137,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Verdana", 18F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(260, 36);
+            this.label1.Location = new System.Drawing.Point(179, 34);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(346, 36);
@@ -150,7 +150,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PowderBlue;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(828, 634);
+            this.ClientSize = new System.Drawing.Size(712, 634);
             this.ControlBox = false;
             this.Controls.Add(this.label1);
             this.Controls.Add(this.picAhorcado);
@@ -167,7 +167,6 @@
             this.Name = "Juego";
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Load += new System.EventHandler(this.Juego_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picAhorcado)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

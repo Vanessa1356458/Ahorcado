@@ -23,7 +23,7 @@ namespace Ahorcado
            "Fruta tropical con muchas semillas", "Pequeña fruta morada", "Fruta tropical con semillas", "Verdura con muchas hojas", "Verdura morada", "Mamífero con caparazón",     
            "Animal semiacuático raro", "Planeta gaseoso azul", "Planeta con nombre de dios", "El más cercano al Sol", "Galaxia vecina", "Luna más grande de Júpiter"
         };
-
+        private List<int> indicesUsados = new List<int>();
         private string palabraActual;
         private string pistaActual;
         private string palabraOculta;
@@ -53,8 +53,20 @@ namespace Ahorcado
         }
         private void IniciarJuego()
         {
+            if (indicesUsados.Count >= palabras.Count)
+            {
+                indicesUsados.Clear();
+                MostrarMensajePersonalizado("¡Has jugado con todas las palabras! Comenzando nueva ronda.", "Información", "Correcto.png");
+            }
+
             Random rnd = new Random();
-            int index = rnd.Next(palabras.Count);
+            int index;
+            do
+            {
+                index = rnd.Next(palabras.Count);
+            } while (indicesUsados.Contains(index));
+
+            indicesUsados.Add(index);
             palabraActual = palabras[index];
             pistaActual = pistas[index];
             char letraRevelada = palabraActual[0];
@@ -85,12 +97,7 @@ namespace Ahorcado
                 }
             }
             return null;
-        }
-        private void Juego_Load(object sender, EventArgs e)
-        {
-
-        }
-
+        }      
         private Image ObtenerImagenMensaje(string nombreImagen)
         {
             Assembly assembly = Assembly.GetExecutingAssembly();
@@ -172,7 +179,6 @@ namespace Ahorcado
         {
             ConfirmarSalir confirmarSalir = new ConfirmarSalir();
             confirmarSalir.ShowDialog();
-        }
-
+        }       
     }
 }
