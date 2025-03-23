@@ -54,7 +54,7 @@
             // lblIncorrectas
             // 
             this.lblIncorrectas.AutoSize = true;
-            this.lblIncorrectas.Location = new System.Drawing.Point(426, 267);
+            this.lblIncorrectas.Location = new System.Drawing.Point(415, 265);
             this.lblIncorrectas.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblIncorrectas.Name = "lblIncorrectas";
             this.lblIncorrectas.Size = new System.Drawing.Size(76, 22);
@@ -95,7 +95,7 @@
             // lblPista
             // 
             this.lblPista.AutoSize = true;
-            this.lblPista.Location = new System.Drawing.Point(426, 306);
+            this.lblPista.Location = new System.Drawing.Point(415, 304);
             this.lblPista.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPista.Name = "lblPista";
             this.lblPista.Size = new System.Drawing.Size(54, 22);
@@ -105,7 +105,7 @@
             // lblVictorias
             // 
             this.lblVictorias.AutoSize = true;
-            this.lblVictorias.Location = new System.Drawing.Point(426, 181);
+            this.lblVictorias.Location = new System.Drawing.Point(415, 179);
             this.lblVictorias.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblVictorias.Name = "lblVictorias";
             this.lblVictorias.Size = new System.Drawing.Size(88, 22);
@@ -115,7 +115,7 @@
             // lblDerrotas
             // 
             this.lblDerrotas.AutoSize = true;
-            this.lblDerrotas.Location = new System.Drawing.Point(425, 223);
+            this.lblDerrotas.Location = new System.Drawing.Point(414, 221);
             this.lblDerrotas.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblDerrotas.Name = "lblDerrotas";
             this.lblDerrotas.Size = new System.Drawing.Size(89, 22);
@@ -124,7 +124,7 @@
             // 
             // picAhorcado
             // 
-            this.picAhorcado.Location = new System.Drawing.Point(118, 110);
+            this.picAhorcado.Location = new System.Drawing.Point(107, 110);
             this.picAhorcado.Name = "picAhorcado";
             this.picAhorcado.Size = new System.Drawing.Size(301, 313);
             this.picAhorcado.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -150,7 +150,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PowderBlue;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.ClientSize = new System.Drawing.Size(712, 634);
+            this.ClientSize = new System.Drawing.Size(723, 634);
             this.ControlBox = false;
             this.Controls.Add(this.label1);
             this.Controls.Add(this.picAhorcado);
