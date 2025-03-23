@@ -16,12 +16,14 @@ namespace Ahorcado
     {
         private List<string> palabras = new List<string>
         {
-            "manzana", "pera", "banana", "zanahoria", "lechuga", "elefante", "jirafa","Jupiter","Marte","Saturno"
+            "guayaba","arándano", "granadilla", "alcachofa", "berenjena", "armadillo", "ornitorrinco", "Neptuno", "Urano", "Mercurio", "Andrómeda", "Ganímedes"
         };
         private List<string> pistas = new List<string>
         {
-            "Fruta", "Fruta", "Fruta", "Verdura", "Verdura", "Animal", "Animal","Planeta","Planeta","Planeta"
+           "Fruta tropical con muchas semillas", "Pequeña fruta morada", "Fruta tropical con semillas", "Verdura con muchas hojas", "Verdura morada", "Mamífero con caparazón",     
+           "Animal semiacuático raro", "Planeta gaseoso azul", "Planeta con nombre de dios", "El más cercano al Sol", "Galaxia vecina", "Luna más grande de Júpiter"
         };
+
         private string palabraActual;
         private string pistaActual;
         private string palabraOculta;
