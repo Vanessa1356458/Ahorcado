@@ -16,6 +16,9 @@ namespace Ahorcado
         {
             InitializeComponent();
 
+            this.Text = "Confirmar salida";
+            lblMensaje.Text = "¿Estás seguro que quieres salir del juego?";
+
             this.Text = "";
             this.FormBorderStyle = FormBorderStyle.FixedDialog;
             this.ControlBox = false;
@@ -58,11 +61,13 @@ namespace Ahorcado
 
         private void btnSi_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            this.DialogResult = DialogResult.Yes;
+            this.Close();
         }
 
         private void btnNo_Click(object sender, EventArgs e)
         {
+            this.DialogResult = DialogResult.No;
             this.Close();
         }
     }

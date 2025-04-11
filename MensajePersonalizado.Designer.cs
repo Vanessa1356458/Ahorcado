@@ -79,6 +79,7 @@
             this.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.Name = "MensajePersonalizado";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Load += new System.EventHandler(this.MensajePersonalizado_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picIcono)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -15,8 +15,11 @@ namespace Ahorcado
         public MensajePersonalizado(string mensaje, string titulo, Image icono)
         {
             InitializeComponent();
-            picIcono.Image = icono;
 
+            picIcono.Image = icono;
+            this.Text = string.Empty;
+            lblMensaje.Text = mensaje;
+            
             this.FormBorderStyle = FormBorderStyle.FixedDialog;
             this.ControlBox = false;
             this.MaximizeBox = false;
@@ -25,7 +28,6 @@ namespace Ahorcado
             this.Size = new Size(400, 300);
 
             picIcono.SizeMode = PictureBoxSizeMode.StretchImage; 
-            picIcono.SizeMode = PictureBoxSizeMode.StretchImage;
             picIcono.Size = new Size(64, 64);
             picIcono.Location = new Point((this.ClientSize.Width - picIcono.Width) / 2, 20);
 
@@ -45,11 +47,15 @@ namespace Ahorcado
             btnAceptar.Location = new Point((this.ClientSize.Width - btnAceptar.Width) / 2, lblMensaje.Bottom + 10);
 
         }
-
         private void btnAceptar_Click(object sender, EventArgs e)
         {
             this.DialogResult = DialogResult.OK;
             this.Close();
+        }
+
+        private void MensajePersonalizado_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
